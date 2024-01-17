@@ -5,7 +5,6 @@ from markdown2 import markdown
 class MDC:
     def __init__(self):
         self.html_buffer = str()
-        self.work_dir = path.dirname(__file__)
 
     def pdf(self, inputfile: str, outputfile: str):
         with open(inputfile, "r") as f:
